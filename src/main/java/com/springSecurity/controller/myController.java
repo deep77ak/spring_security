@@ -23,10 +23,10 @@ public class myController {
 
     }
 
-    @GetMapping("/csrf")
-    public CsrfToken srftoken(HttpServletRequest request) {
-        return (CsrfToken) request.getAttribute("_csrf");
-    }
+    // @GetMapping("/csrf")
+    // public CsrfToken srftoken(HttpServletRequest request) {
+    //     return (CsrfToken) request.getAttribute("_csrf");
+    // }
 
     @GetMapping("/employee")
     public List<employee> getemp() {
